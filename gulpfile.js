@@ -20,7 +20,6 @@ export function css (done) {
     style: 'compressed' 
   }).on('error', sass.logError))
   .pipe( dest('build/css', {sourcemaps: true} ) )
-
   done()
 }
 
